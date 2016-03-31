@@ -29,6 +29,7 @@ function size2Byte($bytes) {
 $du = size2Byte($used[0] *1024);
 $dt = size2Byte($total[0] *1024);
 
+exec("sudo -u $user /usr/local/bin/servicechk 2>&1", $servicestatus);
 ?>
 
 </body>
